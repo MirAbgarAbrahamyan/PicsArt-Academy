@@ -19,10 +19,10 @@ public class Test {
         else {
             try {
                 Utility.usersList = FileService.readFromFile(path, name);
-                Utility.addUsernamesToHashSet(Utility.usersList);
             } catch (IOException e) {
                 e.printStackTrace();
             }
+            Utility.addUsernamesToHashSet(Utility.usersList);
         }
 
         Scanner scan = new Scanner(System.in);
