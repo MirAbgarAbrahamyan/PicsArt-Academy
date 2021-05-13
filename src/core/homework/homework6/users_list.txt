@@ -1,0 +1,4 @@
+asd,asd@jbf.jg,b499ac9e2a3243603f3cbe5a046aeca9,myusername
+hello world,hello@world.com,c606721b44f6fcd440fdde44b6e3ff02,helloworld
+myname,my@mail.ru,fe60208cf56d410b56951b82bf6bb9fe,username
+asd,fs@egn.gjen,731dad8cb06557b83f59fb1178dac05b,vsername
