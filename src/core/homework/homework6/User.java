@@ -15,8 +15,15 @@ public class User {
 
     public User(String fullName, String email, String password, String username) {
         this.fullName = fullName;
+        if (!email.matches(emailRegex))
+            throw new RegistrationException("Please enter a valid email address");
         this.email = email;
+        if (!isValidPassword(password))
+            throw new RegistrationException("Enter a combination of at list 9 symbols where are " +
+                    "exactly 2 numbers and 3 uppercase letters");
         this.password = password;
+        if (Utility.usernameSet.containsKey(username))
+            throw new RegistrationException("This username exists choose another one");
         this.username = username;
     }
 
